@@ -8,7 +8,7 @@
 
 #define DATA "Hello from the othersiiiiideee."
 
-#define SERVER_PATH "/tmp/rth2qmrlab"
+#define SERVER_PATH "/tmp/lel"
 #define BUFFER_LENGTH 1024
 #define FALSE 0 
 
