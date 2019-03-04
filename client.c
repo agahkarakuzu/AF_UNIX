@@ -28,9 +28,9 @@ void main(int argc, char *argv[]){
     }
 
     if (argc > 1)
-         strcpy(serveraddr.sun_path, argv[1]);
+         strcpy(server.sun_path, argv[1]);
       else
-         strcpy(serveraddr.sun_path, SERVER_PATH);
+         strcpy(server.sun_path, SERVER_PATH);
 
     // Establish a connection to the server. 
 
