@@ -19,7 +19,7 @@ void main(int argc, char *argv[]){
     char buffer[BUFFER_LENGTH];
     struct sockaddr_un server; 
 
-    memset(&serveraddr, 0, sizeof(server));
+    memset(&server, 0, sizeof(server));
     sock = socket(AF_UNIX, SOCK_STREAM, 0);
 
     if (sock<0){
