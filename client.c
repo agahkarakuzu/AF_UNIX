@@ -32,13 +32,15 @@ void main(int argc, char *argv[]){
       else
          strcpy(server.sun_path, SERVER_PATH);
 
+    server.sun_family = AF_UNIX;
+
     // Establish a connection to the server. 
 
-    rc = connect(sock, (struct sockaddr *) &server, sizeof(struct sockaddr_un));
+    rc = connect(sock, (struct sockaddr *) &server, SUN_LEN(&server));
 
     if (rc < 0){
         close(sock);
-        perror("Connection to the server failed.");
+        perror("Connection to the server failed here..");
         exit(1);
     }
 
