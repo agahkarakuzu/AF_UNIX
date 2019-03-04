@@ -2,7 +2,6 @@
  * MATLAB mex file to send and receive zmq messages (PUB/SUB)
  * Stephen G. McGill copyright 2013 <smcgill3@seas.upenn.edu>
  * */
-#include <string>
 #include <stdio.h>
 #include <zmq.h>
 #include <unistd.h>
