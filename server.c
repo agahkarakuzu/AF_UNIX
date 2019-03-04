@@ -40,7 +40,7 @@ void main()
 
     // Bind gets a unique name for the socket. 
 
-    rc = bind(sock, (struct sockaddr *)&server, SUN_LEN(server));
+    rc = bind(sock, (struct sockaddr *)&server, SUN_LEN(&server));
 
     if (rc < 0)
     {
@@ -59,7 +59,7 @@ void main()
     if (rc<0){
 
         perror("Listen() failed.");
-        break;
+        exit(1);
     }
 
     for (;;) // Infinite loop 
