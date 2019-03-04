@@ -34,9 +34,10 @@ void main(int argc, char *argv[]){
 
     // Establish a connection to the server. 
 
-    rc = connect(sock, (struct sockaddr *)&server, SUN_LEN(&server));
+    rc = connect(sock, (struct sockaddr *) &server, sizeof(struct sockaddr_un));
 
-    if (rc<0){
+    if (rc < 0){
+        close(sock);
         perror("Connection to the server failed.");
         exit(1);
     }
