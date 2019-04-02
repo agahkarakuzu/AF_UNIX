@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'qmrserver'
+  name: 'qmrserver'
 
 steps:
 - script: echo Hello, world!
