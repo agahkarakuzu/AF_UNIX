@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: 'tristano'
+  name: 'default'
 
 steps:
 - script: mx "Hello world on our existing MATLAB session!"
