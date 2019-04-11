@@ -10,8 +10,8 @@ pool:
   name: 'default'
 
 steps:
-- script: mx "Hello world on our existing MATLAB session!"
-  displayName: 'Run a one-line script'
+- script: mx "disp('Hello world on our existing MATLAB session!'); feature('getpid');"
+  displayName: 'qMRLab'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
