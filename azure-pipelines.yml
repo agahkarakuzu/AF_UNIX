@@ -7,10 +7,10 @@ trigger:
 - master
 
 pool:
-  name: 'qmrserver'
+  name: 'tristano'
 
 steps:
-- script: echo Hello, world!
+- script: mx "Hello world on our existing MATLAB session!"
   displayName: 'Run a one-line script'
 
 - script: |
